@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "YPRouter.h"
 #import "ViewController.h"
 
 @interface AppDelegate ()

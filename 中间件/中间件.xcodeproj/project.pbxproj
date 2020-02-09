@@ -13,10 +13,6 @@
 		946D86A823A9B7D800DB26E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946D86A623A9B7D800DB26E1 /* LaunchScreen.storyboard */; };
 		946D86AB23A9B7D800DB26E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 946D86AA23A9B7D800DB26E1 /* main.m */; };
 		946D86B323A9B85700DB26E1 /* YPMiddleware.m in Sources */ = {isa = PBXBuildFile; fileRef = 946D86B223A9B85700DB26E1 /* YPMiddleware.m */; };
-		946D86B623A9B86F00DB26E1 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 946D86B523A9B86F00DB26E1 /* ViewController2.m */; };
-		9474340823C5F7D600EAA3F5 /* NSObject+JFUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474340723C5F7D600EAA3F5 /* NSObject+JFUnicode.m */; };
-		94AFEC8E23B9EA9500E0BEC9 /* YPRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AFEC8D23B9EA9500E0BEC9 /* YPRouter.m */; };
-		94C3648223AAFF1F0066DB15 /* CTMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C3648023AAFF1F0066DB15 /* CTMediator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,14 +27,6 @@
 		946D86AA23A9B7D800DB26E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		946D86B123A9B85700DB26E1 /* YPMiddleware.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPMiddleware.h; sourceTree = "<group>"; };
 		946D86B223A9B85700DB26E1 /* YPMiddleware.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPMiddleware.m; sourceTree = "<group>"; };
-		946D86B423A9B86F00DB26E1 /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
-		946D86B523A9B86F00DB26E1 /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
-		9474340623C5F7D600EAA3F5 /* NSObject+JFUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JFUnicode.h"; sourceTree = "<group>"; };
-		9474340723C5F7D600EAA3F5 /* NSObject+JFUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JFUnicode.m"; sourceTree = "<group>"; };
-		94AFEC8C23B9EA9500E0BEC9 /* YPRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPRouter.h; sourceTree = "<group>"; };
-		94AFEC8D23B9EA9500E0BEC9 /* YPRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPRouter.m; sourceTree = "<group>"; };
-		94C3648023AAFF1F0066DB15 /* CTMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTMediator.m; sourceTree = "<group>"; };
-		94C3648123AAFF1F0066DB15 /* CTMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTMediator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,16 +63,8 @@
 				946D869923A9B7D400DB26E1 /* AppDelegate.m */,
 				946D869E23A9B7D400DB26E1 /* ViewController.h */,
 				946D869F23A9B7D400DB26E1 /* ViewController.m */,
-				946D86B423A9B86F00DB26E1 /* ViewController2.h */,
-				946D86B523A9B86F00DB26E1 /* ViewController2.m */,
-				9474340623C5F7D600EAA3F5 /* NSObject+JFUnicode.h */,
-				9474340723C5F7D600EAA3F5 /* NSObject+JFUnicode.m */,
-				94AFEC8C23B9EA9500E0BEC9 /* YPRouter.h */,
-				94AFEC8D23B9EA9500E0BEC9 /* YPRouter.m */,
 				946D86B123A9B85700DB26E1 /* YPMiddleware.h */,
 				946D86B223A9B85700DB26E1 /* YPMiddleware.m */,
-				94C3648123AAFF1F0066DB15 /* CTMediator.h */,
-				94C3648023AAFF1F0066DB15 /* CTMediator.m */,
 				946D86A423A9B7D800DB26E1 /* Assets.xcassets */,
 				946D86A623A9B7D800DB26E1 /* LaunchScreen.storyboard */,
 				946D86A923A9B7D800DB26E1 /* Info.plist */,
@@ -166,10 +146,6 @@
 				946D869A23A9B7D400DB26E1 /* AppDelegate.m in Sources */,
 				946D86AB23A9B7D800DB26E1 /* main.m in Sources */,
 				946D86B323A9B85700DB26E1 /* YPMiddleware.m in Sources */,
-				946D86B623A9B86F00DB26E1 /* ViewController2.m in Sources */,
-				9474340823C5F7D600EAA3F5 /* NSObject+JFUnicode.m in Sources */,
-				94C3648223AAFF1F0066DB15 /* CTMediator.m in Sources */,
-				94AFEC8E23B9EA9500E0BEC9 /* YPRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +213,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -289,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
