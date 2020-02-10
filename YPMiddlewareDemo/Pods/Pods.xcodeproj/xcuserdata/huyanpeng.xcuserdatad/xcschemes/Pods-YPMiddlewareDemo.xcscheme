@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1120"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "946D869423A9B7D400DB26E1"
-               BuildableName = "&#x4e2d;&#x95f4;&#x4ef6;.app"
-               BlueprintName = "&#x4e2d;&#x95f4;&#x4ef6;"
-               ReferencedContainer = "container:&#x4e2d;&#x95f4;&#x4ef6;.xcodeproj">
+               BlueprintIdentifier = "78B1C17D9E4D5B494C6491791EDDC61C"
+               BuildableName = "Pods_YPMiddlewareDemo.framework"
+               BlueprintName = "Pods-YPMiddlewareDemo"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -31,7 +31,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -40,16 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "946D869423A9B7D400DB26E1"
-            BuildableName = "&#x4e2d;&#x95f4;&#x4ef6;.app"
-            BlueprintName = "&#x4e2d;&#x95f4;&#x4ef6;"
-            ReferencedContainer = "container:&#x4e2d;&#x95f4;&#x4ef6;.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -57,16 +47,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "946D869423A9B7D400DB26E1"
-            BuildableName = "&#x4e2d;&#x95f4;&#x4ef6;.app"
-            BlueprintName = "&#x4e2d;&#x95f4;&#x4ef6;"
-            ReferencedContainer = "container:&#x4e2d;&#x95f4;&#x4ef6;.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

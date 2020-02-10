@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YPMiddleware"
-  spec.version      = "1.0"
+  spec.version      = "1.0.2"
   spec.summary      = "Middleware."
 
   # This description is used to generate tags and improve search results.
@@ -117,7 +117,7 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
-  spec.framework  = "UIKit"
+  # spec.framework  = "UIKit"
   # spec.frameworks = "UIKit", "objc"
 
   # spec.library   = "iconv"
