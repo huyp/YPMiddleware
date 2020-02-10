@@ -44,7 +44,6 @@
 
 - (void)tap1 {
     id v2 = [YPMiddleware getInstanceWithClassName:@"OtherViewController"];
-    [v2 addObserver:self forKeyPath:@"count" options:NSKeyValueObservingOptionNew context:nil];
     if (v2) {
         [YPMiddleware setTarget:v2 value:@"lucy" forKey:@"msg"];
         [self.navigationController pushViewController:v2 animated:YES];
