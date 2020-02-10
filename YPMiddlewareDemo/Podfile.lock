@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: eaa6f1d1249808f9d1ee53fe4624a00d5eb27003
+PODS:
+  - YPMiddleware (1.0.1)
+
+DEPENDENCIES:
+  - YPMiddleware
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - YPMiddleware
+
+SPEC CHECKSUMS:
+  YPMiddleware: 77cebfb1b2360588bbfee3af57b6ee9f79de7d65
+
+PODFILE CHECKSUM: 9ef76e69c6d85915624e3feef75cbb51fcbaa1dc
 
 COCOAPODS: 1.8.4
