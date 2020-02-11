@@ -2,6 +2,13 @@
 
 用于模块化项目中,不同模块之间的互相调用.不需要import目标模块,利用runtime查找目标Class进行实例化.完全解耦模块之间的依赖关系.
 
+## 集成
+cocoapods导入：pod 'YPMiddleware'
+
+手动导入 YPMiddleware 文件夹
+
+import YPMiddleware
+
 ## 实例化方法
 1. +(nullable id)getInstanceWithClassName:(nonnull NSString *)className;
 
