@@ -135,7 +135,7 @@
          */
         
         // if not up type, return obj.
-        __unsafe_unretained id target = nil;
+        __strong id target = nil;
         [instanceInvocation getReturnValue:&target];
         return target;
         
