@@ -155,7 +155,6 @@
            NSLog(@"[%@] exception: %@", NSStringFromSelector(_cmd), exception);
         } @finally {
             // do nothing
-            
         }
     } else {
         NSLog(@"[%@] exception: %@", NSStringFromSelector(_cmd), @"target == nil");
