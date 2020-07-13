@@ -33,7 +33,7 @@
 #pragma mark -  middleware custom instance with param
 + (nullable id)getInstanceWithClassName:(nonnull NSString *)className customInstanceFunction:(nonnull NSString *)function params:(nonnull id)params, ... NS_REQUIRES_NIL_TERMINATION {
     
-    if (!className) {
+    if (!className || ![className isKindOfClass:[NSString class]]) {
         NSLog(@"[%@] className is nil", NSStringFromSelector(_cmd));
         return nil;
     }
@@ -42,23 +42,27 @@
         NSLog(@"[%@] can't find Class with input className", NSStringFromSelector(_cmd));
         return nil;
     }
-    if (!function) {
+    
+    if (!function || ![function isKindOfClass:[NSString class]]) {
         NSLog(@"[%@] no customInstanceFunction, return init instance", NSStringFromSelector(_cmd));
         return [[TargetClass alloc] init];
-    }
-    SEL sel = NSSelectorFromString(function); // get SEL
-    
-    id receiver = nil;
-    if ([TargetClass respondsToSelector:sel]) {
-        receiver = TargetClass;
     } else {
-        receiver = [TargetClass alloc];
-        if (![receiver respondsToSelector:sel]) {
-            NSLog(@"[%@] %@ Class can't response to %@", NSStringFromSelector(_cmd), className, function);
-            return nil;
+        SEL sel = NSSelectorFromString(function); // get SEL
+        
+        id receiver = TargetClass;
+        if ([TargetClass respondsToSelector:sel]) {
+            receiver = TargetClass;
+            return [self target:receiver performSelector:sel withParams:params, nil];
+        } else {
+            receiver = [TargetClass alloc];
+            if ([receiver respondsToSelector:sel]) {
+                return [self target:receiver performSelector:sel withParams:params, nil];
+            } else {
+                NSLog(@"[%@] %@ Class can't response to %@", NSStringFromSelector(_cmd), className, function);
+                return nil;
+            }
         }
     }
-    return [self target:receiver performSelector:sel withParams:params, nil];
 }
 
 #pragma mark - target perform SEL
@@ -69,7 +73,7 @@
     [instanceInvocation setSelector:sel];
     [instanceInvocation setTarget:receiver];
     id firstParam = params;
-    if (firstParam) { // got param
+    if (firstParam) { // get param
         // NSLog(@"[%@] param:%@", NSStringFromSelector(_cmd), firstParam);
         int index = 2; // param index
         [instanceInvocation setArgument:&firstParam atIndex:index];
@@ -85,62 +89,71 @@
                 NSLog(@"%@:%@",NSStringFromSelector(_cmd), exception);
             }
         }
+        va_end(arg_list);
     } else {
         NSLog(@"[%@] param is nil", NSStringFromSelector(_cmd));
     }
     [instanceInvocation invoke];
 
     if (methodSignature.methodReturnLength > 0) { // have return value
-        const char* retType = [methodSignature methodReturnType];
         
-        
-        if (strcmp(retType, @encode(int)) == 0) {
+        /*
+        add base type at here ...
+        */
+        if (strcmp(methodSignature.methodReturnType, @encode(int)) == 0) {
             int target = 0;
             [instanceInvocation getReturnValue:&target];
             return @(target);
         }
         
-        if (strcmp(retType, @encode(NSInteger)) == 0) {
+        if (strcmp(methodSignature.methodReturnType, @encode(NSInteger)) == 0) {
             NSInteger target = 0;
             [instanceInvocation getReturnValue:&target];
             return @(target);
         }
         
-        if (strcmp(retType, @encode(NSUInteger)) == 0) {
+        if (strcmp(methodSignature.methodReturnType, @encode(NSUInteger)) == 0) {
             NSUInteger target = 0;
             [instanceInvocation getReturnValue:&target];
             return @(target);
         }
         
-        if (strcmp(retType, @encode(CGFloat)) == 0) {
+        if (strcmp(methodSignature.methodReturnType, @encode(CGFloat)) == 0) {
             CGFloat target = 0.f;
             [instanceInvocation getReturnValue:&target];
             return @(target);
         }
         
-        if (strcmp(retType, @encode(BOOL)) == 0) {
+        if (strcmp(methodSignature.methodReturnType, @encode(float)) == 0) {
+            float target = 0.0;
+            [instanceInvocation getReturnValue:&target];
+            return @(target);
+        }
+        
+        if (strcmp(methodSignature.methodReturnType, @encode(double)) == 0) {
+            double target = 0.0;
+            [instanceInvocation getReturnValue:&target];
+            return @(target);
+        }
+        
+        if (strcmp(methodSignature.methodReturnType, @encode(BOOL)) == 0) {
             BOOL target = NO;
             [instanceInvocation getReturnValue:&target];
             return @(target);
         }
         
-        if (strcmp(retType, @encode(CGRect)) == 0) {
+        if (strcmp(methodSignature.methodReturnType, @encode(CGRect)) == 0) {
             CGRect target = CGRectZero;
             [instanceInvocation getReturnValue:&target];
             return NSStringFromCGRect(target);
         }
-        
-        /*
-         add base type at here ...
-         */
-        
-        // if not up type, return obj.
-        __strong id target = nil;
+                
+        // if not up type, return nsobj.
+        id target = nil;
         [instanceInvocation getReturnValue:&target];
         return target;
-        
     } else {
-        // NSLog(@"[%@] customInit not have return value", NSStringFromSelector(_cmd));
+        NSLog(@"[%@] function not return value", NSStringFromSelector(_cmd));
         return nil;
     }
 
