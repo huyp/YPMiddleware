@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44497DB224BC509E0061ED12 /* YPMiddleware.m in Sources */ = {isa = PBXBuildFile; fileRef = 44497DB024BC509D0061ED12 /* YPMiddleware.m */; };
 		44D33B2C23F11EA70070989B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D33B2B23F11EA70070989B /* AppDelegate.m */; };
 		44D33B2F23F11EA70070989B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D33B2E23F11EA70070989B /* SceneDelegate.m */; };
 		44D33B3223F11EA70070989B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D33B3123F11EA70070989B /* ViewController.m */; };
@@ -21,6 +22,8 @@
 /* Begin PBXFileReference section */
 		152E685AF52DDA5BD3A760B8 /* Pods_YPMiddlewareDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YPMiddlewareDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D5E137FCB223AE0D928E884 /* Pods-YPMiddlewareDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPMiddlewareDemo.debug.xcconfig"; path = "Target Support Files/Pods-YPMiddlewareDemo/Pods-YPMiddlewareDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		44497DB024BC509D0061ED12 /* YPMiddleware.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPMiddleware.m; sourceTree = "<group>"; };
+		44497DB124BC509E0061ED12 /* YPMiddleware.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPMiddleware.h; sourceTree = "<group>"; };
 		44D33B2723F11EA70070989B /* YPMiddlewareDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YPMiddlewareDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D33B2A23F11EA70070989B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		44D33B2B23F11EA70070989B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -79,6 +82,8 @@
 				44D33B3123F11EA70070989B /* ViewController.m */,
 				44D33B4323F123690070989B /* OtherViewController.h */,
 				44D33B4423F123690070989B /* OtherViewController.m */,
+				44497DB124BC509E0061ED12 /* YPMiddleware.h */,
+				44497DB024BC509D0061ED12 /* YPMiddleware.m */,
 				44D33B3323F11EA70070989B /* Main.storyboard */,
 				44D33B3623F11EAC0070989B /* Assets.xcassets */,
 				44D33B3823F11EAC0070989B /* LaunchScreen.storyboard */,
@@ -116,7 +121,6 @@
 				44D33B2323F11EA70070989B /* Sources */,
 				44D33B2423F11EA70070989B /* Frameworks */,
 				44D33B2523F11EA70070989B /* Resources */,
-				F772A2A6FB27A2865F9D4899 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,23 +199,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F772A2A6FB27A2865F9D4899 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YPMiddlewareDemo/Pods-YPMiddlewareDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YPMiddlewareDemo/Pods-YPMiddlewareDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YPMiddlewareDemo/Pods-YPMiddlewareDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -221,6 +208,7 @@
 			files = (
 				44D33B3223F11EA70070989B /* ViewController.m in Sources */,
 				44D33B4523F123690070989B /* OtherViewController.m in Sources */,
+				44497DB224BC509E0061ED12 /* YPMiddleware.m in Sources */,
 				44D33B2C23F11EA70070989B /* AppDelegate.m in Sources */,
 				44D33B3D23F11EAC0070989B /* main.m in Sources */,
 				44D33B2F23F11EA70070989B /* SceneDelegate.m in Sources */,

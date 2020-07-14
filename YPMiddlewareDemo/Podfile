@@ -8,6 +8,6 @@ target 'YPMiddlewareDemo' do
   use_frameworks!
 
   # Pods for YPMiddlewareDemo
-  pod 'YPMiddleware'
+  # pod 'YPMiddleware'
   
 end

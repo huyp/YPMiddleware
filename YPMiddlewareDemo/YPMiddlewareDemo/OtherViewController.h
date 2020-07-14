@@ -8,14 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
+@protocol OtherViewControllerDelegate <NSObject>
 
-@interface OtherViewController : UIViewController
-
-- (instancetype)initWithMsg:(NSString *)msg;
-
-+ (instancetype)shareInstance;
+- (void)changeBgColor:(UIColor *)color;
 
 @end
 
-NS_ASSUME_NONNULL_END
+@interface OtherViewController : UIViewController
+
+- (instancetype)initWithMsg:(NSString *)msg delegate:(id)delegate;
+
++ (instancetype)classInstance;
+
+@end

@@ -12,6 +12,8 @@
 
 @property (nonatomic, copy) NSString * msg;
 
+@property (nonatomic, weak) id <OtherViewControllerDelegate> delegate;
+
 @end
 
 @implementation OtherViewController
@@ -28,29 +30,32 @@
     return self;
 }
 
-+ (instancetype)shareInstance {
-    static OtherViewController * v2;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        v2 = [OtherViewController new];
-        v2.view.backgroundColor = [UIColor greenColor];
-    });
-    NSLog(@"shareInstance %@", self);
-    return v2;
-}
-
-- (instancetype)initWithMsg:(NSString *)msg {
+- (instancetype)initWithMsg:(NSString *)msg delegate:(id)delegate {
     self = [super init];
     if (self) {
+        NSLog(@"cmd:%s",__func__);
         _msg = msg;
+        _delegate = delegate;
         self.view.backgroundColor = [UIColor grayColor];
     }
     return self;
 }
 
++ (instancetype)classInstance {
+    return [[super alloc] init];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    if (self.delegate) {
+        UIButton * btn1 = [[UIButton alloc] initWithFrame:CGRectMake(50, 100, 300, 40)];
+        [btn1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [btn1 setTitle:@"change delegate background redColor" forState:UIControlStateNormal];
+        btn1.titleLabel.font = [UIFont systemFontOfSize:12];
+        [btn1 addTarget:self action:@selector(tap1) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:btn1];
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -58,15 +63,10 @@
     self.navigationItem.title = self.msg;
 }
 
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)tap1 {
+    if ([self.delegate respondsToSelector:@selector(changeBgColor:)]) {
+        [self.delegate changeBgColor:[UIColor redColor]];
+    }
 }
-*/
 
 @end

@@ -34,18 +34,11 @@
 + (nullable id)getInstanceWithClassName:(nonnull NSString *)className customInstanceFunction:(nonnull NSString *)function params:(nonnull id)params, ... NS_REQUIRES_NIL_TERMINATION;
 
 /**
- Especially in order to more than two params
- @param receiver target
- @param sel selector
- @param params function params
- @return get return value, maybe nil
+ Through runtime get the instance, can't get or set property with set function, use kvc instead.
+ contant try catch
+ @return if success YES, fail NO.
  */
-+ (nullable id)target:(id _Nonnull )receiver performSelector:(SEL _Nonnull )sel withParams:(nonnull id)params, ... NS_REQUIRES_NIL_TERMINATION;
-
-/**
- Through runtime get the instance, can't get or set property with get/set function, use kvc instead.
- */
-+ (void)setTarget:(nonnull id)target value:(nonnull id)value forKey:(nonnull NSString *)key;
++ (BOOL)setTarget:(nonnull id)target value:(nonnull id)value forKey:(nonnull NSString *)key;
 
 
 @end

@@ -22,12 +22,12 @@ id v2 = [YPMiddleware getInstanceWithClassName:@"OtherViewController"];
 ```
 自定义无参数的初始化方法实例化对象
 
-id v2 = [YPMiddleware getInstanceWithClassName:@"OtherViewController" customInstanceFunction:@"shareInstance"];
+id v2 = [YPMiddleware getInstanceWithClassName:@"OtherViewController" customInstanceFunction:@"classInstance"];
 ```
 
 3. +(nullable id)getInstanceWithClassName:(nonnull NSString *)className customInstanceFunction:(nonnull NSString *)function params:(nonnull id)params, ... NS_REQUIRES_NIL_TERMINATION;
 ```
 自定义带参数的初始化方法实例化对象
 
-id v2 = [YPMiddleware getInstanceWithClassName:@"OtherViewController" customInstanceFunction:@"initWithMsg:" params:@"jacky", nil];
+id v2 = [YPMiddleware getInstanceWithClassName:@"OtherViewController" customInstanceFunction:@"initWithMsg:delegate:" params:@"jacky", nil];
 ```

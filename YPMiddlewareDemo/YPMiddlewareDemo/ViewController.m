@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+@property (nonatomic, copy) NSArray *data;
+
 
 @end
 
@@ -17,53 +19,67 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor yellowColor];
-
-    UIButton * btn1 = [[UIButton alloc] initWithFrame:CGRectMake(50, 100, 300, 40)];
-    [btn1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [btn1 setTitle:@"采用init方法创建一个控制器,并传入值" forState:UIControlStateNormal];
-    btn1.titleLabel.font = [UIFont systemFontOfSize:12];
-    [btn1 addTarget:self action:@selector(tap1) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn1];
     
-    UIButton * btn2 = [[UIButton alloc] initWithFrame:CGRectMake(50, 150, 300, 40)];
-    [btn2 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [btn2 setTitle:@"采用自定义初始化方法创建一个控制器,并传入值" forState:UIControlStateNormal];
-    btn2.titleLabel.font = [UIFont systemFontOfSize:12];
-    [btn2 addTarget:self action:@selector(tap2) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn2];
+    self.data = @[@"get instance with className", @"get instance with params", @"get instance with class function"];
     
-    UIButton * btn3 = [[UIButton alloc] initWithFrame:CGRectMake(50, 200, 300, 40)];
-    [btn3 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [btn3 setTitle:@"采用自定义类初始化方法创建一个控制器,并传入值" forState:UIControlStateNormal];
-    btn3.titleLabel.font = [UIFont systemFontOfSize:12];
-    [btn3 addTarget:self action:@selector(tap3) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn3];
+    self.tableview = [[UITableView alloc] initWithFrame:self.view.bounds];
+    self.tableview.delegate = self;
+    self.tableview.dataSource = self;
+    [self.view addSubview:self.tableview];
 }
 
-- (void)tap1 {
-    id v2 = [YPMiddleware getInstanceWithClassName:@"OtherViewController"];
-    if (v2) {
-        [YPMiddleware setTarget:v2 value:@"lucy" forKey:@"msg"];
-        [self.navigationController pushViewController:v2 animated:YES];
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 3;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    }
+    cell.textLabel.text = self.data[indexPath.row];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    switch (indexPath.row) {
+        case 0: {
+            id v2 = [YPMiddleware getInstanceWithClassName:@"OtherViewController"];
+            if (v2) {
+                [YPMiddleware setTarget:v2 value:@"lucy" forKey:@"msg"];
+                [self.navigationController pushViewController:v2 animated:YES];
+            }
+        }
+            break;
+        case 1: {
+            id v2 = [YPMiddleware getInstanceWithClassName:@"OtherViewController" customInstanceFunction:@"initWithMsg:delegate:" params:@"jacky", self, nil];
+            if (v2) {
+                [self.navigationController pushViewController:v2 animated:YES];
+            }
+        }
+            break;
+        case 2: {
+            id v2 = [YPMiddleware getInstanceWithClassName:@"OtherViewController" customInstanceFunction:@"classInstance"];
+            if (v2) {
+                [YPMiddleware setTarget:v2 value:@"jone" forKey:@"msg"];
+                [self.navigationController pushViewController:v2 animated:YES];
+            }
+        }
+            break;
+        default:
+            break;
     }
 }
 
-- (void)tap2 {
-    id v2 = [YPMiddleware getInstanceWithClassName:@"OtherViewController" customInstanceFunction:@"initWithMsg:" params:@"jacky", nil];
-    if (v2) {
-        [self.navigationController pushViewController:v2 animated:YES];
-    }
-}
-
-- (void)tap3 {
-    id v2 = [YPMiddleware getInstanceWithClassName:@"OtherViewController" customInstanceFunction:@"shareInstance"];
-    if (v2) {
-        [YPMiddleware setTarget:v2 value:@"jone" forKey:@"msg"];
-        [self.navigationController pushViewController:v2 animated:YES];
-    }
+#pragma mark - 执行一个隐式代理方法
+- (void)changeBgColor:(UIColor *)color {
+    self.tableview.backgroundColor = color;
 }
 
 

@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <YPMiddleware.h>
+#import "YPMiddleware.h"
+#import "OtherViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
+@property (nonatomic, strong) UITableView *tableview;
 
 @end
 
