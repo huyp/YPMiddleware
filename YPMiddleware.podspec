@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "YPMiddleware"
-  spec.version      = "1.0.4"
+  spec.version      = "1.0.5"
   spec.summary      = "Middleware."
   spec.description  = <<-DESC
                       OC Runtime Middleware
