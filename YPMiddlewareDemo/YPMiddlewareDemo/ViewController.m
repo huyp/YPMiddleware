@@ -22,7 +22,7 @@
     
     self.view.backgroundColor = [UIColor yellowColor];
     
-    self.data = @[@"get instance with className", @"get instance with params", @"get instance with class function"];
+    self.data = @[@"get instance with className", @"get instance with params", @"get instance with class function", @"perform class function with params"];
     
     self.tableview = [[UITableView alloc] initWithFrame:self.view.bounds];
     self.tableview.delegate = self;
@@ -35,7 +35,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return self.data.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -72,6 +72,10 @@
             }
         }
             break;
+        case 3 : {
+            [YPMiddleware className:@"OtherViewController" performFunction:@"printA:andB:" params:@"aa",@"bb", nil];
+//            [YPMiddleware getInstanceWithClassName:@"OtherViewController" customInstanceFunction:@"classInstance"];
+        }
         default:
             break;
     }

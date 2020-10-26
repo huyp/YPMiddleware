@@ -69,4 +69,8 @@
     }
 }
 
++ (void)printA:(NSString *)a andB:(NSString *)b {
+    NSLog(@"A: %@, b: %@",a,b);
+}
+
 @end

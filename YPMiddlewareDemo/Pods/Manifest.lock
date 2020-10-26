@@ -1,16 +1,16 @@
 PODS:
-  - YPMiddleware (1.0.5)
+  - YPMiddleware (1.0.6)
 
 DEPENDENCIES:
-  - YPMiddleware
+  - YPMiddleware (from `../`)
 
-SPEC REPOS:
-  trunk:
-    - YPMiddleware
+EXTERNAL SOURCES:
+  YPMiddleware:
+    :path: "../"
 
 SPEC CHECKSUMS:
-  YPMiddleware: 9c48eeae40bc6c37beba882327d55656d6c3bde7
+  YPMiddleware: ce68710d0a3b8c32b15e2a44afc089b9d3c78340
 
-PODFILE CHECKSUM: 13b4a175d4e8b1d1e7e68f04d87fc0fd46b3b892
+PODFILE CHECKSUM: 87e9fe3e86b9537a40eda42a8243fdc800b87e13
 
 COCOAPODS: 1.9.3

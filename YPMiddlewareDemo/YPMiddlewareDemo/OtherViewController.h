@@ -20,4 +20,6 @@
 
 + (instancetype)classInstance;
 
++ (void)printA:(NSString *)a andB:(NSString *)b;
+
 @end
