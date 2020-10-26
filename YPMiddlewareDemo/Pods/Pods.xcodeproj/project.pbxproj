@@ -3,63 +3,133 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BCF7AE8E1658395195A38049B101439 /* Pods-YPMiddlewareDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73C37A50F711AEA5885E659E71D5D73C /* Pods-YPMiddlewareDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D6B3409FFF0C33700E723CA4408A487 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		B96CC25B286A1030EAEF1D971C7DCB8C /* Pods-YPMiddlewareDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAF38AA92299ADE2867CFE4520E507B /* Pods-YPMiddlewareDemo-dummy.m */; };
+		04C0E0B4D43733678B50DB123D9F6B81 /* Pods-YPMiddlewareDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F56A81DC798567A3DA9C354DC85AFC9 /* Pods-YPMiddlewareDemo-dummy.m */; };
+		10E64F0CA85F2551475F5D57735CE543 /* YPMiddleware.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B5E032CD4CEE4147E208DFD3B834F4 /* YPMiddleware.m */; };
+		2283EA8F5354876E436D985DB5BD9535 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		32697C04F35977C1FB58F8C308970E2B /* YPMiddleware.h in Headers */ = {isa = PBXBuildFile; fileRef = E61D2A77C1F5540161ECAC2636E0DF1F /* YPMiddleware.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		573BB7A3068B2CA8ED98D23D3976BCCC /* Pods-YPMiddlewareDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9A6B600D901557F4A1DEF5DEDC78D9F /* Pods-YPMiddlewareDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7238DCF3357F8C9732D6B51D3A5E6537 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C1F1B6E59F7B43A08AF298A39CA552C9 /* YPMiddleware-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 757443E38FD30568F988F6E0B1125596 /* YPMiddleware-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E37C43C0DF8ABAD98BA16B3C5223B97C /* YPMiddleware-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0ED2F6C89F20520B8BD9B24FAC98D3 /* YPMiddleware-dummy.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8D184A5B7CC2765469BB3B63E5B39413 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 737F9E1C70A5F1E5A44B0332BCB71C68;
+			remoteInfo = YPMiddleware;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		00E69B35FDB4750D1456ADDCA6448976 /* YPMiddleware-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YPMiddleware-prefix.pch"; sourceTree = "<group>"; };
+		0E16566532C1ABD0242F11B294CFF235 /* YPMiddleware-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YPMiddleware-Info.plist"; sourceTree = "<group>"; };
+		26B5E032CD4CEE4147E208DFD3B834F4 /* YPMiddleware.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YPMiddleware.m; path = YPMiddleware/YPMiddleware.m; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4134B6B430295BE62BA6D1E4C4627456 /* Pods-YPMiddlewareDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YPMiddlewareDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		56DB99240FDCCF196A99D22D124B0831 /* Pods-YPMiddlewareDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YPMiddlewareDemo.modulemap"; sourceTree = "<group>"; };
-		5EC6EDB1FA6EE8C86A517E01164674FC /* Pods-YPMiddlewareDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YPMiddlewareDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		73C37A50F711AEA5885E659E71D5D73C /* Pods-YPMiddlewareDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YPMiddlewareDemo-umbrella.h"; sourceTree = "<group>"; };
-		778B14B116BB61E5CDB69DC7CA313555 /* Pods-YPMiddlewareDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YPMiddlewareDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		946135158B434C0E43ED1BF8300E1270 /* Pods-YPMiddlewareDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YPMiddlewareDemo.release.xcconfig"; sourceTree = "<group>"; };
+		39FDAC157F9C806004956B8DB3BDB006 /* YPMiddleware.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YPMiddleware.debug.xcconfig; sourceTree = "<group>"; };
+		3C098415FF1BCB3D1B073B4CCAFABBA7 /* Pods-YPMiddlewareDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YPMiddlewareDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5FA810BC513B0DA74AF7F873E33A0499 /* Pods-YPMiddlewareDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YPMiddlewareDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		757443E38FD30568F988F6E0B1125596 /* YPMiddleware-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YPMiddleware-umbrella.h"; sourceTree = "<group>"; };
+		7F56A81DC798567A3DA9C354DC85AFC9 /* Pods-YPMiddlewareDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YPMiddlewareDemo-dummy.m"; sourceTree = "<group>"; };
+		851F5B6E63110F7C054438968D5A1F6D /* Pods-YPMiddlewareDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YPMiddlewareDemo-frameworks.sh"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B9BB4F5EE73F0B00983F1C48321B2263 /* Pods-YPMiddlewareDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YPMiddlewareDemo-Info.plist"; sourceTree = "<group>"; };
-		ECAF38AA92299ADE2867CFE4520E507B /* Pods-YPMiddlewareDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YPMiddlewareDemo-dummy.m"; sourceTree = "<group>"; };
+		A048DEF567F55A2714CAC035C464E1B7 /* YPMiddleware.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YPMiddleware.release.xcconfig; sourceTree = "<group>"; };
+		A92BC8625C89C92307C44A145F858499 /* Pods-YPMiddlewareDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YPMiddlewareDemo.modulemap"; sourceTree = "<group>"; };
+		AA2692444EA2DC11FAB0EFD42F3D4467 /* Pods-YPMiddlewareDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YPMiddlewareDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B65782F6684FFAB40F939A0FD4B7840E /* Pods-YPMiddlewareDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YPMiddlewareDemo-Info.plist"; sourceTree = "<group>"; };
+		CE0ED2F6C89F20520B8BD9B24FAC98D3 /* YPMiddleware-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YPMiddleware-dummy.m"; sourceTree = "<group>"; };
+		DF1D483BC6C44D61D26EE085C7C90491 /* Pods-YPMiddlewareDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YPMiddlewareDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E61D2A77C1F5540161ECAC2636E0DF1F /* YPMiddleware.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YPMiddleware.h; path = YPMiddleware/YPMiddleware.h; sourceTree = "<group>"; };
+		E642BD80B5DD8AE2D178FB9BF54D3575 /* YPMiddleware.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YPMiddleware.framework; path = YPMiddleware.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F305B9B10B06D377339F71E0EC7B204E /* Pods_YPMiddlewareDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YPMiddlewareDemo.framework; path = "Pods-YPMiddlewareDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53C6B733AD4F29BB4D5FD5057C10F2C /* YPMiddleware.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YPMiddleware.modulemap; sourceTree = "<group>"; };
+		F9A6B600D901557F4A1DEF5DEDC78D9F /* Pods-YPMiddlewareDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YPMiddlewareDemo-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		983D0ECFBE2799C0BBC2766C407F1049 /* Frameworks */ = {
+		A3FD069E68AA10EEBA46B5BA4626CA56 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D6B3409FFF0C33700E723CA4408A487 /* Foundation.framework in Frameworks */,
+				2283EA8F5354876E436D985DB5BD9535 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5D40F25E2865AA83DF957B316D4DD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7238DCF3357F8C9732D6B51D3A5E6537 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8E244E2C764A7E2EDE01223257192A72 /* Pods-YPMiddlewareDemo */ = {
+		2E01382059155C278E16CE58EC96F17C /* Pods-YPMiddlewareDemo */ = {
 			isa = PBXGroup;
 			children = (
-				56DB99240FDCCF196A99D22D124B0831 /* Pods-YPMiddlewareDemo.modulemap */,
-				4134B6B430295BE62BA6D1E4C4627456 /* Pods-YPMiddlewareDemo-acknowledgements.markdown */,
-				778B14B116BB61E5CDB69DC7CA313555 /* Pods-YPMiddlewareDemo-acknowledgements.plist */,
-				ECAF38AA92299ADE2867CFE4520E507B /* Pods-YPMiddlewareDemo-dummy.m */,
-				B9BB4F5EE73F0B00983F1C48321B2263 /* Pods-YPMiddlewareDemo-Info.plist */,
-				73C37A50F711AEA5885E659E71D5D73C /* Pods-YPMiddlewareDemo-umbrella.h */,
-				5EC6EDB1FA6EE8C86A517E01164674FC /* Pods-YPMiddlewareDemo.debug.xcconfig */,
-				946135158B434C0E43ED1BF8300E1270 /* Pods-YPMiddlewareDemo.release.xcconfig */,
+				A92BC8625C89C92307C44A145F858499 /* Pods-YPMiddlewareDemo.modulemap */,
+				AA2692444EA2DC11FAB0EFD42F3D4467 /* Pods-YPMiddlewareDemo-acknowledgements.markdown */,
+				5FA810BC513B0DA74AF7F873E33A0499 /* Pods-YPMiddlewareDemo-acknowledgements.plist */,
+				7F56A81DC798567A3DA9C354DC85AFC9 /* Pods-YPMiddlewareDemo-dummy.m */,
+				851F5B6E63110F7C054438968D5A1F6D /* Pods-YPMiddlewareDemo-frameworks.sh */,
+				B65782F6684FFAB40F939A0FD4B7840E /* Pods-YPMiddlewareDemo-Info.plist */,
+				F9A6B600D901557F4A1DEF5DEDC78D9F /* Pods-YPMiddlewareDemo-umbrella.h */,
+				3C098415FF1BCB3D1B073B4CCAFABBA7 /* Pods-YPMiddlewareDemo.debug.xcconfig */,
+				DF1D483BC6C44D61D26EE085C7C90491 /* Pods-YPMiddlewareDemo.release.xcconfig */,
 			);
 			name = "Pods-YPMiddlewareDemo";
 			path = "Target Support Files/Pods-YPMiddlewareDemo";
 			sourceTree = "<group>";
 		};
-		BB943B73CE43BFD8008752980408A33B /* Targets Support Files */ = {
+		3A053FBFF2638A4242D7AF4AD8132D07 /* YPMiddleware */ = {
 			isa = PBXGroup;
 			children = (
-				8E244E2C764A7E2EDE01223257192A72 /* Pods-YPMiddlewareDemo */,
+				E61D2A77C1F5540161ECAC2636E0DF1F /* YPMiddleware.h */,
+				26B5E032CD4CEE4147E208DFD3B834F4 /* YPMiddleware.m */,
+				4DBEEAB5B39989C6BDE50EDBBEEE0653 /* Support Files */,
 			);
-			name = "Targets Support Files";
+			name = YPMiddleware;
+			path = YPMiddleware;
+			sourceTree = "<group>";
+		};
+		4DBEEAB5B39989C6BDE50EDBBEEE0653 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F53C6B733AD4F29BB4D5FD5057C10F2C /* YPMiddleware.modulemap */,
+				CE0ED2F6C89F20520B8BD9B24FAC98D3 /* YPMiddleware-dummy.m */,
+				0E16566532C1ABD0242F11B294CFF235 /* YPMiddleware-Info.plist */,
+				00E69B35FDB4750D1456ADDCA6448976 /* YPMiddleware-prefix.pch */,
+				757443E38FD30568F988F6E0B1125596 /* YPMiddleware-umbrella.h */,
+				39FDAC157F9C806004956B8DB3BDB006 /* YPMiddleware.debug.xcconfig */,
+				A048DEF567F55A2714CAC035C464E1B7 /* YPMiddleware.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YPMiddleware";
+			sourceTree = "<group>";
+		};
+		6E59D9FABF0014C46C194872F9194A3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F305B9B10B06D377339F71E0EC7B204E /* Pods_YPMiddlewareDemo.framework */,
+				E642BD80B5DD8AE2D178FB9BF54D3575 /* YPMiddleware.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5308FF340432CB0EB71140B440994DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A053FBFF2638A4242D7AF4AD8132D07 /* YPMiddleware */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -75,8 +145,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				FA2C54A045011FA727B8B05275B2E476 /* Products */,
-				BB943B73CE43BFD8008752980408A33B /* Targets Support Files */,
+				B5308FF340432CB0EB71140B440994DA /* Pods */,
+				6E59D9FABF0014C46C194872F9194A3B /* Products */,
+				D53FB8AA5F6257250076D54B3B0E6FF7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,40 +159,68 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FA2C54A045011FA727B8B05275B2E476 /* Products */ = {
+		D53FB8AA5F6257250076D54B3B0E6FF7 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F305B9B10B06D377339F71E0EC7B204E /* Pods_YPMiddlewareDemo.framework */,
+				2E01382059155C278E16CE58EC96F17C /* Pods-YPMiddlewareDemo */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		FE35D116A7E39D35446DDF754D436722 /* Headers */ = {
+		03BE5D6974C4A97E23B6AD2F4759844F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BCF7AE8E1658395195A38049B101439 /* Pods-YPMiddlewareDemo-umbrella.h in Headers */,
+				573BB7A3068B2CA8ED98D23D3976BCCC /* Pods-YPMiddlewareDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7ACABA28AB9D3B2B963D7A8767861BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1F1B6E59F7B43A08AF298A39CA552C9 /* YPMiddleware-umbrella.h in Headers */,
+				32697C04F35977C1FB58F8C308970E2B /* YPMiddleware.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		78B1C17D9E4D5B494C6491791EDDC61C /* Pods-YPMiddlewareDemo */ = {
+		737F9E1C70A5F1E5A44B0332BCB71C68 /* YPMiddleware */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7D25EF2DEF861D38A16AA1B8CEF84A28 /* Build configuration list for PBXNativeTarget "Pods-YPMiddlewareDemo" */;
+			buildConfigurationList = 3281371C846CDD54514A6352F7813A5E /* Build configuration list for PBXNativeTarget "YPMiddleware" */;
 			buildPhases = (
-				FE35D116A7E39D35446DDF754D436722 /* Headers */,
-				27B74B0524670770C2F0034ED9438A23 /* Sources */,
-				983D0ECFBE2799C0BBC2766C407F1049 /* Frameworks */,
-				CCD3BF3CC4E350270D9E8D3D874AFE5B /* Resources */,
+				D7ACABA28AB9D3B2B963D7A8767861BF /* Headers */,
+				34D255751A52277BC7D1DEB3FDBE85EB /* Sources */,
+				A3FD069E68AA10EEBA46B5BA4626CA56 /* Frameworks */,
+				D4E25411DC614E8C3AB4C274CEC90E01 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = YPMiddleware;
+			productName = YPMiddleware;
+			productReference = E642BD80B5DD8AE2D178FB9BF54D3575 /* YPMiddleware.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		78B1C17D9E4D5B494C6491791EDDC61C /* Pods-YPMiddlewareDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92964D54686A5549AB3EE0C10C11CD43 /* Build configuration list for PBXNativeTarget "Pods-YPMiddlewareDemo" */;
+			buildPhases = (
+				03BE5D6974C4A97E23B6AD2F4759844F /* Headers */,
+				350BD3A586DD6651E73E35578DDF1BA2 /* Sources */,
+				EA5D40F25E2865AA83DF957B316D4DD9 /* Frameworks */,
+				88822CF255610F68714A72FB32B0B2AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				946B904DCD2F60E584D5522B1F402B31 /* PBXTargetDependency */,
 			);
 			name = "Pods-YPMiddlewareDemo";
 			productName = "Pods-YPMiddlewareDemo";
@@ -138,7 +237,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 10.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -146,17 +245,25 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = FA2C54A045011FA727B8B05275B2E476 /* Products */;
+			productRefGroup = 6E59D9FABF0014C46C194872F9194A3B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				78B1C17D9E4D5B494C6491791EDDC61C /* Pods-YPMiddlewareDemo */,
+				737F9E1C70A5F1E5A44B0332BCB71C68 /* YPMiddleware */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CCD3BF3CC4E350270D9E8D3D874AFE5B /* Resources */ = {
+		88822CF255610F68714A72FB32B0B2AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4E25411DC614E8C3AB4C274CEC90E01 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -166,20 +273,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		27B74B0524670770C2F0034ED9438A23 /* Sources */ = {
+		34D255751A52277BC7D1DEB3FDBE85EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B96CC25B286A1030EAEF1D971C7DCB8C /* Pods-YPMiddlewareDemo-dummy.m in Sources */,
+				E37C43C0DF8ABAD98BA16B3C5223B97C /* YPMiddleware-dummy.m in Sources */,
+				10E64F0CA85F2551475F5D57735CE543 /* YPMiddleware.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		350BD3A586DD6651E73E35578DDF1BA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C0E0B4D43733678B50DB123D9F6B81 /* Pods-YPMiddlewareDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		946B904DCD2F60E584D5522B1F402B31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YPMiddleware;
+			target = 737F9E1C70A5F1E5A44B0332BCB71C68 /* YPMiddleware */;
+			targetProxy = 8D184A5B7CC2765469BB3B63E5B39413 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		0BD3A8F81A9E697E1D1807D1DB72871F /* Debug */ = {
+		554101F6EEA66E4B0EF978014BE244AE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EC6EDB1FA6EE8C86A517E01164674FC /* Pods-YPMiddlewareDemo.debug.xcconfig */;
+			baseConfigurationReference = DF1D483BC6C44D61D26EE085C7C90491 /* Pods-YPMiddlewareDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -210,10 +335,46 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
+		};
+		652731CB31A2AA55626BB593053050BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A048DEF567F55A2714CAC035C464E1B7 /* YPMiddleware.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YPMiddleware/YPMiddleware-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YPMiddleware/YPMiddleware-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YPMiddleware/YPMiddleware.modulemap";
+				PRODUCT_MODULE_NAME = YPMiddleware;
+				PRODUCT_NAME = YPMiddleware;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -279,9 +440,9 @@
 			};
 			name = Debug;
 		};
-		B494FAEF9AB5B5AB31ED5EAFC1EEDD5F /* Release */ = {
+		EC22B517CE2697E877EDC43DA7D2165F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 946135158B434C0E43ED1BF8300E1270 /* Pods-YPMiddlewareDemo.release.xcconfig */;
+			baseConfigurationReference = 3C098415FF1BCB3D1B073B4CCAFABBA7 /* Pods-YPMiddlewareDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -312,11 +473,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -378,9 +538,52 @@
 			};
 			name = Release;
 		};
+		F37CB9609948C0BDAFA6DC7FC8BAA6F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39FDAC157F9C806004956B8DB3BDB006 /* YPMiddleware.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YPMiddleware/YPMiddleware-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YPMiddleware/YPMiddleware-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YPMiddleware/YPMiddleware.modulemap";
+				PRODUCT_MODULE_NAME = YPMiddleware;
+				PRODUCT_NAME = YPMiddleware;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3281371C846CDD54514A6352F7813A5E /* Build configuration list for PBXNativeTarget "YPMiddleware" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F37CB9609948C0BDAFA6DC7FC8BAA6F8 /* Debug */,
+				652731CB31A2AA55626BB593053050BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -390,11 +593,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7D25EF2DEF861D38A16AA1B8CEF84A28 /* Build configuration list for PBXNativeTarget "Pods-YPMiddlewareDemo" */ = {
+		92964D54686A5549AB3EE0C10C11CD43 /* Build configuration list for PBXNativeTarget "Pods-YPMiddlewareDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0BD3A8F81A9E697E1D1807D1DB72871F /* Debug */,
-				B494FAEF9AB5B5AB31ED5EAFC1EEDD5F /* Release */,
+				EC22B517CE2697E877EDC43DA7D2165F /* Debug */,
+				554101F6EEA66E4B0EF978014BE244AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 60344deb04e066fe6b3b754232c322fa3087ba05
+PODS:
+  - YPMiddleware (1.0.5)
+
+DEPENDENCIES:
+  - YPMiddleware
+
+SPEC REPOS:
+  trunk:
+    - YPMiddleware
+
+SPEC CHECKSUMS:
+  YPMiddleware: 9c48eeae40bc6c37beba882327d55656d6c3bde7
+
+PODFILE CHECKSUM: 13b4a175d4e8b1d1e7e68f04d87fc0fd46b3b892
 
 COCOAPODS: 1.9.3

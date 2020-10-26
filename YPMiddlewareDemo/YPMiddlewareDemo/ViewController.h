@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "YPMiddleware.h"
-#import "OtherViewController.h"
 
 @interface ViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
